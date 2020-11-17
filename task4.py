@@ -18,11 +18,14 @@ Hi Gertrude! You are a VIP!
 Enter your name=>Gordon
 You are not a VIP.
 """
+#VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
+
+name=input("Enter name")
+
 
 VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
-VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
-a = (input("enter name"))
-if a in VIPNames :
-    print ("Hey" , a , "! You are a VIP!")
+
+if name in VIPNames:
+    print("Hi"+ " "+ name+"!" +" " +"You are a VIP!")
 else:
-    print ("You are not VIP."
+    print("You are not a VIP.")
