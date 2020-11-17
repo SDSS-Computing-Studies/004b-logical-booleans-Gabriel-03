@@ -18,15 +18,16 @@ Example:
 Enter a number: 8
 8 is only a perfect cube.
 """
-import math
-a = float (input ("number?"))
-b = math.sqrt(a)
-c = a ** (1/3)
-if b % 1 == 0 and c % 1 == 0:
-    print ("xx is both a perfect square and a perfect cube.")
-elif b % 1 == 0:
-    print("xx is only a perfect square.")
-elif c % 1 == 0:
-    print ("xx is only a perfect cube.")
-else:
-    print("error")
+import math 
+number=input("Enter number")
+number=float(number)
+a=str(number)
+if math.sqrt(number)%1==0 and round(number**(1.0/3),8)%1==0:
+    
+    
+    print(""+a+" "+"is both a perfect square and a perfect cube.")
+elif math.sqrt(number)%1==0:
+    print(""+a+" "+"is only a perfect square.")
+elif number**(1.0/3)%1==0:
+    number=round(number,8)
+    print(""+a+" "+"is only a perfect cube.")
